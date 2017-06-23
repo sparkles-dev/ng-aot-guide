@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { BttfComponent } from './bttf.component';
 import { BttfService } from './bttf.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   declarations: [
     BttfComponent
@@ -14,7 +16,7 @@ import { BttfService } from './bttf.service';
     BttfComponent
   ],
   providers: [
-    BttfService
+    { provide: BttfService, useFactory: () => new BttfService() }
   ]
 })
 export class BttfModule { }

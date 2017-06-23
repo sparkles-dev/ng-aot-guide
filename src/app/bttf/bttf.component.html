@@ -1,3 +1,24 @@
-<p>
-  bttf works!
+<h2>{{ message }}</h2>
+
+<p *ngIf="count && items">
+  There are {{ count }} {{ items }}.
 </p>
+
+<button class="btn" (click)="onAdd($event)">Add more {{ items }}</button>
+
+
+<form style="width: 20em" class="centered mt-10" #f="ngForm" (ngSubmit)="onSubmit(f.controls.question.value)">
+  <!-- form input control -->
+  <div class="form-group">
+    <label class="form-label" for="question">Question</label>
+    <input class="form-input" type="text" id="question" placeholder="What says a chicken?" name="question" ngModel />
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Ask a chicken!</button>
+  </div>
+</form>
+
+<blockquote *ngIf="answer">
+  <p>{{ answer | async }}</p>
+  <cite>- A chicken says.</cite>
+</blockquote>
