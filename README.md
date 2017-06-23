@@ -21,7 +21,7 @@ $ yarn add spectre.css
 ```
 
 Now, generate some application code for demonstration purposes.
-We generate an `NgModule`, a `Component`, and a `Service`.
+We generate a fairly trivial app with just one `NgModule`, one `Component`, and one `Service`.
 
 ```bash
 $ ng generate module bttf
@@ -91,7 +91,8 @@ This user interface is implemented by a `BttfComponent` with a `BttfService` beh
 Both component and service are located in `BttfModule`.
 
 In JiT compilation (`ng build --dev`), the application works fine.
-However, when running AoT compilation (`ng build --prod`), we encounter several errors.
+However, with AoT compilation (`ng build --prod`), we encounter several errors.
+We will talk through this errors and look how to fix and void them.
 
 
 #### Common Mis-Take #1: Factory functions must be exported, named functions
@@ -99,7 +100,8 @@ However, when running AoT compilation (`ng build --prod`), we encounter several 
 The first error message is:
 
 ```
-Error encountered resolving symbol values statically. Function calls are not supported. Consider replacing the function or lambda with a reference to an exported function
+Error encountered resolving symbol values statically. Function calls are not supported.
+Consider replacing the function or lambda with a reference to an exported function
 ```
 
 It is caused in `bttf.module.ts` by the factory provider:
