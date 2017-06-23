@@ -4,7 +4,7 @@
   There are {{ count }} {{ items }}.
 </p>
 
-<button class="btn" (click)="onAdd($event)">Add more {{ items }}</button>
+<button class="btn" (click)="onAdd()">Add more {{ items }}</button>
 
 
 <form style="width: 20em" class="centered mt-10" #f="ngForm" (ngSubmit)="onSubmit(f.controls.question.value)">
