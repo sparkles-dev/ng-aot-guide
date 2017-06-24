@@ -9,6 +9,7 @@
     "build:dev": "ng build --dev",
     "build:prod": "ng build --prod",
     "test": "ng test",
+    "test:ci": "ng test --single-run",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

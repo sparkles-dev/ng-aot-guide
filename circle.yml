@@ -19,4 +19,4 @@ test:
   override:
     - yarn build:dev
     - yarn build:prod
-    - yarn test
+    - yarn test:ci
