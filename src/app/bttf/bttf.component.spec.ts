@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { BttfComponent } from './bttf.component';
+import { BttfService } from './bttf.service';
 
 describe('BttfComponent', () => {
   let component: BttfComponent;
@@ -8,7 +11,9 @@ describe('BttfComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BttfComponent ]
+      declarations: [ BttfComponent ],
+      imports: [ CommonModule, FormsModule ],
+      providers: [ BttfService ]
     })
     .compileComponents();
   }));
