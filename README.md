@@ -1,6 +1,8 @@
 Angular: writing AoT-friendly apps
 ==================================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dherges/ng-aot-guide.svg)](https://greenkeeper.io/)
+
 > [Read the full story on medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f)
 
 This article is published under my [Spektrakel Blog on Medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f).
