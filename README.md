@@ -1,9 +1,11 @@
 Angular: writing AoT-friendly apps
 ==================================
 
+> [Read the full story on medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f)
+
+[![CircleCI](https://circleci.com/gh/dherges/ng-aot-guide/tree/master.svg?style=svg)](https://circleci.com/gh/dherges/ng-aot-guide/tree/master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/dherges/ng-aot-guide.svg)](https://greenkeeper.io/)
 
-> [Read the full story on medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f)
 
 This article is published under my [Spektrakel Blog on Medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f).
 It describes development guidelines and instructions how to write AoT-compatible apps with the Angular CLI and talks through this topic by an example app.
