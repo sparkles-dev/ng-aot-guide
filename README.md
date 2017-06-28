@@ -4,7 +4,7 @@ Angular: writing AoT-friendly apps
 > [Read the full story on medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f)
 
 [![CircleCI](https://circleci.com/gh/spektrakel-blog/ng-aot-guide/tree/master.svg?style=svg)](https://circleci.com/gh/spektrakel-blog/ng-aot-guide/tree/master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/dherges/ng-aot-guide.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/spektrakel-blog/ng-aot-guide.svg)](https://greenkeeper.io/)
 
 
 This article is published under my [Spektrakel Blog on Medium.com](https://medium.com/spektrakel-blog/angular-writing-aot-friendly-applications-7b64c8afbe3f).
