@@ -1609,8 +1609,8 @@ error-ex@^1.2.0:
     is-arrayish "^0.2.1"
 
 es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
-  version "0.10.27"
-  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.27.tgz#bf926b058c62b1cb5de1a887930673b6aa6d9a66"
+  version "0.10.29"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.29.tgz#768eb2dfc4957bcf35fa0568f193ab71ede53fd8"
   dependencies:
     es6-iterator "2"
     es6-symbol "~3.1"
@@ -4801,9 +4801,9 @@ spdy@^3.4.1:
     select-hose "^2.0.0"
     spdy-transport "^2.0.18"
 
-spectre.css@^0.2.14:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/spectre.css/-/spectre.css-0.2.15.tgz#20be8f88fd11e017a6877e42eb394b0cfbabd038"
+spectre.css@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/spectre.css/-/spectre.css-0.3.1.tgz#bf33fde23815117d3470ab455375073d7bba0596"
 
 sprintf-js@^1.0.3:
   version "1.1.1"
@@ -5164,8 +5164,8 @@ type-is@~1.6.15:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.4.2.tgz#f8395f85d459276067c988aa41837a8f82870844"
 
 typescript@^2.3.3:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.0.tgz#60989e74cad93c28fe35f7f7b41fe9b205a25701"
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.1.tgz#ce7cc93ada3de19475cc9d17e3adea7aee1832aa"
 
 uglify-js@3.0.x:
   version "3.0.27"
