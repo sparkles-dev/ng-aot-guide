@@ -1,0 +1,47 @@
+version: 2
+defaults: &defaults
+  docker:
+    - image: angular/ngcontainer:latest
+  working_directory: ~/repo
+
+jobs:
+  # Build for all branches and tags
+  build:
+    <<: *defaults
+    steps:
+      # Checkout, Download and cache dependencies
+      - checkout
+      - restore_cache:
+          key: v2-dependencies-{{ checksum "yarn.lock" }}
+      # Print Version Info
+      - run:
+          name: Version Info
+          command: |
+            node --version \
+              && yarn --version \
+              && git --version
+      # Install dependencies
+      - run: yarn install --frozen-lockfile --non-interactive
+      - save_cache:
+          key: v2-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - "node_modules"
+      # Run the ci build
+      - run: yarn build:dev
+      - run: yarn build:prod
+      - run: xvfb-run yarn test:ci
+      # Store artefacts on circle
+      - store_artifacts:
+          path: ~/repo/dist
+          destination: dist
+
+workflows:
+  version: 2
+  cirunner:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: /gh-pages/
+            tags:
+              only: /v.*/
