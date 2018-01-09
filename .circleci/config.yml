@@ -29,7 +29,7 @@ jobs:
       # Run the ci build
       - run: yarn build:dev
       - run: yarn build:prod
-      - run: yarn test:ci
+      - run: xvfb-run yarn test:ci
       # Store artefacts on circle
       - store_artifacts:
           path: ~/repo/dist
