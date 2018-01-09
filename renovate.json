@@ -2,7 +2,7 @@
   "pinVersions": false,
   "semanticCommits": true,
   "semanticPrefix": "build:",
-  "commitMessage": "{{semanticPrefix}} update {{depName}} to version {{newVersion}}",
+  "commitMessage": "{{semanticPrefix}}update {{depName}} to version {{newVersion}}",
   "packages": [
     {
       "packagePattern": "^@angular\/.*",
